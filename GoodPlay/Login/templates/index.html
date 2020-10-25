@@ -1,0 +1,357 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <title>GoodPlay</title>
+        <meta charset="utf-8">
+        {% load static %}
+        <link rel="icon" type="image/jpg" href="image/spartan.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="{% static 'css/estilos.css' %}" rel="stylesheet">
+        
+    </head>
+    <body>
+      
+        <div class="container">
+            <header class="container">
+              <div class="row">
+                <div  class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)" >  
+                  {% load static %}
+                  <img src="{% static 'image/header22_1.png' %}"  width="235px" height="150px">
+                </div>
+              </div>
+              <hr>
+            </header>
+            <nav class=" sticky-top py-1">
+                <div class="btn-group btn-block">
+                    <button type="button" data-info="formulario.html" class="mybtn btn btn-primary botones">Suscríbase</button>
+                    <button type="button" data-info="consolas.html" class="mybtn btn btn-primary botones">Consolas</button>
+                    <button type="button" data-info="juegos.html" class="mybtn btn btn-primary botones">Juegos</button>
+                    <button type="button" data-info="accesorio.html" class="mybtn btn btn-primary botones">Accesorios</button>
+                    <button type="button" data-info="computacion.html" class="mybtn btn btn-primary botones">Computacion</button>
+                </div>
+            </nav>
+            
+          <section class="container">
+            <hr>
+              <div>
+                  <div id="bayek" class="carousel slide" data-ride="carousel">
+                      
+                          <ol data-target="#bayek" data-slide-to="0"></ol>
+                          <ol data-target="#bayek" data-slide-to="1"></ol>
+                          <ol data-target="#bayek" data-slide-to="2"></ol>
+                      
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <a href="consolas.html">
+                            <img class="d-block w-100" src="{% static 'image/dou.jpg' %}">
+                          </a>
+                              <div class="carousel-caption">
+                                <h1 class="abajo">Descubre</h1>
+                              </div>
+                          </div>
+                              <div class="carousel-item">
+                                <a href="juegos.html">
+                                  <img class="d-block w-100" src="{% static 'image/oferta.jpg' %}">
+                                </a>
+                                  <div class="carousel-caption">
+                                      <h1 class="centro">Explora Nuevos Mundos</h1>
+                                    </div>
+                              </div>
+                              <div class="carousel-item ">
+                                <a href="computacion.html">
+                                  <img class="d-block w-100" src="{% static 'image/cod.jpg' %}">
+                                  
+                                </a>
+                                  <div class="carousel-caption">
+                                      <h1 class="arriba">Aprovecha Ofertas Unicas</h1>
+                                    </div>
+                              </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#bayek" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#bayek" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                    
+              </div>
+              <hr>
+            </div>
+          </section>
+          <aside class="container">
+            <div class="row">
+              <div class="col-xl 3 col-lg-3 col-md-4 col-sm-12 col-4" style="background-color:rgb(255, 255, 255)">
+                <br>
+                <hr style="height:3px;border-width:0;color:gray;background-color:black"> 
+                <br>
+              </div>
+              <div class="col-xl 6 col-lg-6 col-md-4 col-sm-12 col-4" style="background-color:rgb(255, 255, 255)">
+                <center>
+                  <br>
+                  <h3 id="titulo-uno">Nuevos Juegos</h3>
+                </center>
+              </div>
+              <div class="col-xl 3 col-lg-3 col-md-4 col-sm-12 col-4" style="background-color:rgb(255, 255, 255)">
+                <br>
+                <hr style="height:3px;border-width:0;color:gray;background-color:black">
+                <br>
+              </div>
+            </div>
+            <hr>
+              <div class="row">
+                <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                  <center>
+                    <a href="juegos.html" target="_blank">
+                      <img src="{% static 'image/jp1.jpg' %}" width="190px" height="260px">
+                    </a>
+                  <br><br>
+                    <p class="game">GHOST OF TSUSHIMA</p>
+                    <h3 >$40.000</h3>
+                  </center>
+                </div>
+                <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                  <center>
+                    <a href="juegos.html" target="_blank">
+                      <img src="{% static 'image/jx2.jpg' %}" width="190px" height="260px">
+                    </a>
+                  <br><br>
+                    <p class="game">CYBERPUNK 2077</p>
+                    <h3>$45.000</h3>
+                </center>
+                </div>
+                <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                  <center>
+                    <a href="juegos.html" target="_blank">
+                      <img src="{% static 'image/jn3.jpg' %}" width="170px" height="260px">
+                    </a>
+                        <br><br>
+                        <p class="game">SUPER SMASH BROSS</p>
+                        <h3>$43.000</h3>
+                </center>
+                </div>
+                <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                  <center>
+                    <a href="juegos.html" target="_blank">  
+                      <img src="{% static 'image/jp4.jpg' %}" width="190px" height="260px">
+                    </a>
+                      <br><br>
+                    <p class="game">THE LAST OF US PART II</p>
+                    <h3>$45.000</h3>
+                </center>
+                </div>
+              </div>
+            <hr>
+          <div class="row">
+            <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+              <br>
+                <hr style="height:3px;border-width:0;color:gray;background-color:black">
+                <br>  
+            </div>
+            <div class="col-xl 6" style="background-color:rgb(255, 255, 255)">
+              <center>
+                <br>
+                <h3>Consolas</h3>
+              </center>
+            </div>
+            <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+              <br>
+                <hr style="height:3px;border-width:0;color:gray;background-color:black">
+                <br>
+            </div>
+          </div>
+          <hr>
+            <div class="row">
+              <div class="col-xl 4 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div style="background-color:rgb(255, 255, 255)">
+                <center>
+                  <a href="consolas.html" target="_blank">
+                    <img src="{% static 'image/play.png' %}" width="280px" height="260px">
+                  </a>
+                </center>
+                </div>
+              </div>
+              <div class="col-xl 4 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div style="background-color:rgb(255, 255, 255)">
+                <center>
+                  <a href="consolas.html" target="_blank">
+                    <img src="{% static 'image/xbxo.png' %}" width="360px" height="260px">
+                  </a>
+                </center>
+                </div>
+              </div>
+              <div class="col-xl 4 col-lg-12 col-md-12 col-sm-12 col-12"> 
+                <div style="background-color:rgb(255, 255, 255)">
+                  <center>
+                    <a href="consolas.html" target="_blank">
+                    <img src="{% static 'image/ns.png' %}" width="260px" height="260px">
+                    </a>
+                  </center>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                <br>
+                <hr style="height:3px;border-width:0;color:gray;background-color:black">
+                <br>
+              </div>
+              <div class="col-xl 6" style="background-color:rgb(255, 255, 255)">
+                <center>
+                  <br>
+                  <h3>Ofertas Imperdibles</h3>
+                </center>
+              </div>
+              <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                <br>
+                <hr style="height:3px;border-width:0;color:gray;background-color:black">
+                <br>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <a href="consolas.html" target="_blank">
+                &nbsp;&nbsp;&nbsp;<img src="{% static 'image/play4.jpg' %}" width="230px" height="260px">
+                </a>
+                <P class="game">PLAYSTATION 4 PACK</P>
+                <h3>$270.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)"> 
+                <center>
+                <a href="computacion.html" target="_blank">
+                <img src="{% static 'image/audi.jpg' %}" width="250px" height="260px">
+                </a>
+                <P class="game"> DBLUE AUDIFONOS GAMER</P>
+                <h3>$80.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <a href="accesorio.html" target="_blank">
+                <img src="{% static 'image/fun.jpg' %}" width="265px" height="260px">
+                </a>
+                <P class="game">FUNKO POP MARVEL IRON MAN</P>
+                <h3>$15.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <a href="computacion.html" target="_blank">
+                <img src="{% static 'image/teclado.jpg' %}" width="250px" height="260px">
+                </a>
+                <P class="game">TECLADO GAMER MECANICO</P>
+                <h3>$110.000</h3>
+              </center>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-xl 12 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+              </div>
+            </div>
+            <hr>
+          </aside>
+          <footer class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                <br>
+                <center>
+                <img src="{% static 'image/sorteo.jpg' %}" width="480" height="410">
+              </center>
+              </div>
+              <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                <img src="{% static 'image/crahs.png' %}" width="655px" height="457px">
+              </div>
+            </div>
+            <div class="row"> 
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(248, 0, 0)">
+                  <img src="{% static 'image/marioasomado.png' %}" width="265px" height="145px">
+              </div>
+              <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(248, 0, 0)"> 
+                <br><br>
+                <h6 class="lol">Suscribete en GoodPlay</h6>
+                <P class="siwa">Para recibir notificaciones de ofertas unicas</P>
+              </div>
+              <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(248, 0, 0)">
+                <br><br>
+                <button type="button" data-info="formulario.html" class=" mybtn btn btn-warning btn-block siwa">Suscribete Ya</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12"  style="background-color:#fff">
+                <br>
+                <img src="{% static 'image/header22.png' %}" width="235px" height="145px">  
+                <ol id="pepe">
+                  <li>Siguenos En Las Redes Sociales </li>
+                  <hr>
+                  <img src="{% static 'image/insta.png' %}" width="63px" height="41px"> 
+                  <img src="{% static 'image/face.png' %}" width="59px" height="39px">&nbsp;&nbsp;
+                  <img src="{% static 'image/t.png' %}" width="42px" height="40px">
+                </ol>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12"  style="background-color:#fff">
+                <ol id="pepe">
+                  <li><h6>Horarios Sucursal</h6></li>
+                  <li>Lunes a Sabado</li>
+                  <li>10:00 AM - 21:00 PM</li>
+                  <li></li>
+                  <br>
+                  <li><h6>Horarios Web</h6></li>
+                  <li>Lunes a Sabado</li>
+                  <li>09:00 AM - 22:00 PM</li>
+                  <br>
+                  <li><h6>Contactenos</h6></li>
+                  <li>goodplay@gmail.com</li>
+                  <li>4362984567(Mesa Central)</li>
+                </ol>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12"  style="background-color:#fff">
+                <ol id="pepe">
+                  <li><h6>Sucursales</h6></li>
+                  <li>- Maipu (Carmen Luisa Correa)</li>
+                  <li>- Las Condes (Esteban Dell'orto)</li>
+                  <li>- Huechuraba (Calle Nueva)</li>
+                  <li>- San Ramon (René Schneider)</li>
+                  <li>- San Bernardo (Frida Khalo)</li>
+                  <li>- Vitacura (Baltimore)</li>
+                  <li>- Ñuñoa (Pdte Madero)</li>
+                  <li>- Puente alto(San Carlos)</li>
+                  <li>- El Bosque (Los Guindos)</li>
+                  <hr>
+                </ol>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12"  style="background-color:#fff">
+                <img src="{% static 'image/Captura.png' %}">
+                <img src="{% static 'image/mario.png' %}" width="370px" height="220px">
+              </div>
+            </div>
+          </footer>
+    </div>
+    
+  
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+
+      $(".mybtn").click(function(){
+        //this apunta a el objeto que le hice click
+        var newpage = $(this).data("info");
+        window.location.href = newpage;
+      })
+
+    </script>  
+  </body>
+</html>
+
+{% endblock %}
