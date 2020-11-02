@@ -1,0 +1,363 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <title>GoodPlay</title>
+        <meta charset="utf-8">
+        {% load static %}
+        <link rel="icon" type="image/jpg" href="image/spartan.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    </head>
+    <body>
+        <div class="container">
+            <header class="container">
+                <div class="row">
+                    <div  class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 content top" style="background-color:rgb(255, 255, 255)" >  
+                      <a href="index.html">
+                        <img src="{% static 'image/header22_1.png' %}"   width="235px" height="150px">
+                      </a>
+                  </div>
+                </div>
+                  <hr>
+            </header>
+            <nav class="sticky-top py-1">
+              <div class="btn-group btn-block">
+                  <button type="button" data-info="{% url 'index.html'%}" class="mybtn btn btn-primary botones">Menu</button>
+                  <button type="button" data-info="{% url 'consolas.html'%}" class="mybtn btn btn-primary botones">Consolas</button>
+                  <button type="button" data-info="{% url 'juegos.html'%}" class="mybtn btn btn-primary botones">Juegos</button>
+                  <button type="button" data-info="{% url 'accesorio.html'%}" class="mybtn btn btn-primary botones">Accesorios</button>
+                  <button type="button" data-info="{% url 'computacion.html'%}" class="mybtn btn btn-primary botones">Computacion</button>
+              </div>
+          </nav>
+            <aside class="container">
+                  <hr>
+                <div class="row">
+                  <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                    <br>
+                <hr style="height:3px;border-width:0;color:gray;background-color:black">
+                <br>
+                  </div>
+                  <div class="col-xl 6" style="background-color:rgb(255, 255, 255)">
+                    <center>
+                      <br>
+                      <h1>Consolas</h1>
+                    </center>
+                  </div>
+                  <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                    <br>
+                <hr style="height:3px;border-width:0;color:gray;background-color:black">
+                <br>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-xl 4 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                  </center>
+                    <img src="{% static 'image/Logo/ps.png' %}" width="300px" height="260px">
+                  </center>
+                  </div>
+                  <div class="col-xl 4 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                    <center>
+                      <img src="{% static 'image/Logo/xb.png' %}" width="300px" height="260px">
+                  </center>
+                  </div>
+                  <div class="col-xl 4 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                    <center>
+                    <img src="{% static 'image/Logo/n.png' %}" width="350px" height="170px">
+                  </center>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                    <br>
+                <hr style="height:3px;border-width:0;color:gray;background-color:black">
+                <br>
+                  </div>
+                  <div class="col-xl 6" style="background-color:rgb(255, 255, 255)">
+                    <center>
+                      <br>
+                      <h2>Proximamente</h2>
+                    </center>
+                  </div>
+                  <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                    <br>
+                <hr style="height:3px;border-width:0;color:gray;background-color:black">
+                <br>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-xl 6 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div style="background-color:rgb(255, 255, 255)">
+                    <center>
+                        <img src="{% static 'image/consola/ps5.jpg' %}"width="500px" height="360px">
+                    </center>
+                    </div>
+                  </div>
+                  <div class="col-xl 6  col-lg-12 col-md-12 col-sm-12 col-12"> 
+                    <div style="background-color:rgb(255, 255, 255)">
+                      <center>                 
+                        <img src="{% static 'image/consola/xos.jpg' %}" width="500px" height="360px">
+                      </center>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(233, 0, 3)">
+                    <br>
+                <hr style="height:3px;border-width:0;color:gray;background-color:black">
+                <br>
+                  </div>
+                  <div class="col-xl 6" style="background-color:rgb(233, 0, 3)">
+                    <center>
+                      <br>
+                      <h1 class="colores">Nintendo</h1>
+                    </center>
+                  </div>
+                  <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(233, 0, 3)">
+                    <br>
+                <hr style="height:3px;border-width:0;color:gray;background-color:black">
+                <br>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                    <center>
+                    <img src="{% static 'image/consola/newns.jpg' %}" width="230px" height="260px">
+                    <P class="game">NINTENDO SWITCH</P>
+                    <h3>$350.000</h3>
+                  </center>
+                  </div>
+                  <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)"> 
+                    <center>
+                    <img src="{% static 'image/consola/ns.jpg' %}" width="230px" height="260px">
+                    <P class="game">NINTENDO SWITCH LITE</P>
+                    <h3>$200.000</h3>
+                  </center>
+                  </div>
+                  <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                    <center>
+                    <img src="{% static 'image/consola/nspg.png' %}" width="260px" height="260px">
+                    <P class="game">NEW NINTENDO 3DS XL</P>
+                    <h3>$210.000</h3>
+                  </center>
+                  </div>
+                  <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                   <center>
+                    <img src="{% static 'image/consola/smb.jpg' %}" width="230px" height="260px">
+                    <P class="game">NINTENDO SWITCH</P>
+                    <h3>$300.000</h3>
+                  </center>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-xl 12 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                  </div>
+                </div>
+                  <hr>                
+                <div class="row">
+                  <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(52, 171, 17)">
+                    <br>
+                    <hr style="height:3px;border-width:0;color:gray;background-color:black">
+                    <br>
+                  </div>
+                  <div class="col-xl 6" style="background-color:rgba(52, 171, 17)">
+                    <center>
+                      <br>
+                      <h1 class="colores">Xbox</h1>
+                    </center>
+                  </div>
+                  <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(52, 171, 17)">
+                    <br>
+                <hr style="height:3px;border-width:0;color:gray;background-color:black">
+                <br>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                    <center>
+                    <img src="{% static 'image/consola/xbox1.png' %}" width="230px" height="260px">
+                    <P class="game">XBOX ONE NEGRA</P>
+                    <h3>$250.000</h3>
+                  </center>
+                  </div>
+                  <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)"> 
+                    <center>
+                    <img src="{% static 'image/consola/xbox3.jpg' %}" width="230px" height="260px">
+                    <P class="game">XBOX ONE V. MINECRAFT</P>
+                    <h3>$300.000</h3>
+                  </center>
+                  </div>
+                  <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                    <center>
+                    <img src="{% static 'image/consola/xbox2.jpg' %}" width="230px" height="260px">
+                    <P class="game">XBOX ONE S</P>
+                    <h3>$260.000</h3>
+                  </center>
+                  </div>
+                  <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                    <center>
+                    <img src="{% static 'image/consola/xbox4.jpg' %}" width="230px" height="260px">
+                    <P class="game">XBOX ONE V. CYBERPUNK</P>
+                    <h3>$360.000</h3>
+                  </center>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-xl 12 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                  </div>
+                </div>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(25, 70, 137)">
+                      <br>
+                <hr style="height:3px;border-width:0;color:gray;background-color:black">
+                <br>
+                    </div>
+                    <div class="col-xl 6" style="background-color:rgb(25, 70, 137)">
+                      <center>
+                        <br>
+                        <h1 class="colores">PlayStation</h1>
+                      </center>
+                    </div>
+                    <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(25, 70, 137)">
+                      <br>
+                <hr style="height:3px;border-width:0;color:gray;background-color:black">
+                <br>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                      <center>
+                      <img src="{% static 'image/consola/playpro.jpg' %}" width="230px" height="260px">
+                      <P class="game">PLAYSTATION 4 PRO</P>
+                      <h3>$370.000</h3>
+                    </center>
+                    </div>
+                    <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)"> 
+                      <center>
+                      <img src="{% static 'image/play4.jpg' %}" width="230px" height="260px">
+                      <P class="game"> MEGA PACK PLAYSTATION 4</P>
+                      <h3>$330.000</h3>
+                    </center>
+                    </div>
+                    <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                      <center>
+                      <br>
+                      <img src="{% static 'image/consola/playslimpng.png' %}" width="230px" height="235px">
+                      <P class="game">PLAYSTATION 4 SLIM</P>
+                      <h3>$290.000</h3>
+                    </center>
+                    </div>
+                    <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                      <center>
+                      <img src="{% static 'image/play.png' %}" width="230px" height="260px">
+                      <P class="game">PlayStation 4</P>
+                      <h3>$280.000</h3>
+                    </center>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-xl 12 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                    </div>
+                  </div>
+                  <hr>
+                </aside>
+            <footer class="container">
+              <div class="row"> 
+                <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(248, 0, 0)">
+                  <center>
+                    <img src="{% static 'image/marioasomado.png' %}" width="265px" height="145px">
+                  </center>
+                </div>
+                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(248, 0, 0)"> 
+                  <center>
+                  <br><br>
+                  <h6 class="lol">Suscribete en GoodPlay</h6>
+                  <P class="siwa">Para recibir notificaciones de ofertas unicas</P>
+                </center>
+                </div>
+                <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(248, 0, 0)">
+                  <center>
+                  <br><br>
+                  <button type="button" data-info="formulario.html" class="mybtn btn btn-warning btn-block siwa">Suscribete Ya</button>
+                </center>
+                </div>
+              </div>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12"  style="background-color:#fff">
+                    <br>
+                    <img src="{% static 'image/header22.png' %}" width="235px" height="145px">  
+                    <ol id="pepe">
+                      <li>Siguenos En Las Redes Sociales </li>
+                      <hr>
+                      <img src="{% static 'image/insta.png' %}" width="63px" height="41px"> 
+                      <img src="{% static 'image/face.png' %}" width="59px" height="39px">&nbsp;&nbsp;
+                      <img src="{% static 'image/t.png' %}" width="42px" height="40px">
+                    </ol>
+                  </div>
+                  <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12"  style="background-color:#fff">
+                    <ol id="pepe">
+                      <li><h6>Horarios Sucursal</h6></li>
+                      <li>Lunes a Sabado</li>
+                      <li>10:00 AM - 21:00 PM</li>
+                      <li></li>
+                      <br>
+                      <li><h6>Horarios Web</h6></li>
+                      <li>Lunes a Sabado</li>
+                      <li>09:00 AM - 22:00 PM</li>
+                      <br>
+                      <li><h6>Contactenos</h6></li>
+                      <li>goodplay@gmail.com</li>
+                      <li>4362984567(Mesa Central)</li>
+                    </ol>
+                  </div>
+                  <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12"  style="background-color:#fff">
+                    <ol id="pepe">
+                      <li><h6>Sucursales</h6></li>
+                      <li>- Maipu (Carmen Luisa Correa)</li>
+                      <li>- Las Condes (Esteban Dell'orto)</li>
+                      <li>- Huechuraba (Calle Nueva)</li>
+                      <li>- San Ramon (René Schneider)</li>
+                      <li>- San Bernardo (Frida Khalo)</li>
+                      <li>- Vitacura (Baltimore)</li>
+                      <li>- Ñuñoa (Pdte Madero)</li>
+                      <li>- Puente alto(San Carlos)</li>
+                      <li>- El Bosque (Los Guindos)</li>
+                      <hr>
+                    </ol>
+                  </div>
+                  <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12"  style="background-color:#fff">
+                    <img src="{% static 'image/captura.png' %}">
+                    <img src="{% static 'image/mario.png' %}" width="370px" height="220px">
+                  </div>
+                </div>
+              </footer>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+      $(".mybtn").click(function(){
+        var newpage = $(this).data("info");
+        window.location.href = newpage;
+      })
+    </script>   
+    </body>
+</html>
+
+{% endblock %}

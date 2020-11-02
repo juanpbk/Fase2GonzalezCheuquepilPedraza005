@@ -1,0 +1,354 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GoodPlay</title>
+        <meta charset="utf-8">
+        {% load static %}
+        <link rel="icon" type="image/jpg" href="image/spartan.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="container">
+                <div class="row">
+                    <div  class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 content top" style="background-color:rgb(255, 255, 255)" > 
+                        <a href="index.html">
+                      <img src="{% static 'image/header22_1.png' %}" width="235px" height="150px">
+                    </a> 
+                  </div>
+                </div>
+                  <hr>
+            </header>
+            <nav class="sticky-top py-1">
+              <div class="btn-group btn-block">
+                  <button type="button" data-info="{% url 'index.html' %}" class="mybtn btn btn-primary botones">Menu</button>
+                  <button type="button" data-info="{% url 'consolas.html' %}" class="mybtn btn btn-primary botones">Consolas</button>
+                  <button type="button" data-info="{% url 'juegos.html' %}" class="mybtn btn btn-primary botones">Juegos</button>
+                  <button type="button" data-info="{% url 'accesorio.html' %}" class="mybtn btn btn-primary botones">Accesorios</button>
+                  <button type="button" data-info="{% url 'computacion.html' %}" class="mybtn btn btn-primary botones">Computacion</button>
+              </div>
+          </nav>
+          <aside class="container">
+            <hr>
+            <div class="row">
+              <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                <br>
+            <hr style="height:3px;border-width:0;color:gray;background-color:black">
+            <br>
+              </div>
+              <div class="col-xl 6" style="background-color:rgb(255, 255, 255)">
+                <center>
+                  <br>
+                  <h1>Accesorios</h1>
+                </center>
+              </div>
+              <div class="col-xl 3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)">
+                <br>
+            <hr style="height:3px;border-width:0;color:gray;background-color:black">
+            <br>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <img src="{% static 'image/Accesorios/pp.jpg' %}"  width="210px" height="260px">
+                <P class="game">PELUCHE PIKACHU</P>
+                <h3>$15.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)"> 
+                <center>
+                <img src="{% static 'image/Accesorios/pp2.jpg' %}"  width="180px" height="260px">
+                <P class="game">PELUCHE PIPLUP</P>
+                <h3>$15.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <img src="{% static 'image/Accesorios/pp3.jpg' %}"  width="250px" height="260px">
+                <P class="game">PELUCHE UMBREON</P>
+                <h3>$15.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+               <center>
+                <img src="{% static 'image/Accesorios/pp4.jpg' %}"  width="240px" height="260px">
+                <P class="game">PELUCHE CHARIZARD</P>
+                <h3>$20.000</h3>
+              </center>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <img src="{% static 'image/Accesorios/fp.jpg' %}"  width="260px" height="260px">
+                <P class="game">FUNKO POP AVATAR</P>
+                <h3>$15.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)"> 
+                <center>
+                <img src="{% static 'image/Accesorios/fp2.png' %}"  width="260px" height="260px">
+                <P class="game">FUNKO POP GAMORA</P>
+                <h3>$30.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <img src="{% static 'image/Accesorios/fp3.jpg' %}"  width="270px" height="260px">
+                <P class="game">FUNKO POP KISS</P>
+                <h3>$10.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+               <center>
+                <img src="{% static 'image/Accesorios/fp4.jpg' %}"  width="245px" height="260px">
+                <P class="game">FUNKO POP ROCK LEE</P>
+                <h3>$10.000</h3>
+              </center>
+              </div>
+            </div>    
+            <hr>
+            <div class="row">
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <img src="{% static 'image/Accesorios/pg.jpg' %}"  width="220px" height="260px">
+                <P class="game">POLERA DE MARIO</P>
+                <h3>$5.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)"> 
+                <center>
+                <img src="{% static 'image/Accesorios/pg.jpg4.jpg' %}"  width="230px" height="260px">
+                <P class="game">POLERA DE MARIO</P>
+                <h3>$5.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <img src="{% static 'image/Accesorios/pg2.jpg' %}"  width="260px" height="260px">
+                <P class="game">POLERA DE MARIO</P>
+                <h3>$5.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+               <center>
+                <img src="{% static 'image/Accesorios/pg3.jpg' %}"  width="260px" height="260px">
+                <P class="game">POLERA DE MARIO</P>
+                <h3>$5.000</h3>
+              </center>
+              </div>
+            </div>    
+            <hr>
+            <div class="row">
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <img src="{% static 'image/Accesorios/llaverodp.jpg' %}"  width="270px" height="260px">
+                <P class="game">LLAVERO DEADPOOL</P>
+                <h3>$5.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)"> 
+                <center>
+                <img src="{% static 'image/Accesorios/llaverofornite.jpg' %}"  width="230px" height="260px">
+                <P class="game">LLAVERO FORNITE</P>
+                <h3>$5.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <img src="{% static 'image/Accesorios/llaverosupernintendo.png' %}"  width="210px" height="260px">
+                <P class="game">LLAVERO SUPER NINTENDO</P>
+                <h3>$6.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+               <center>
+                <img src="{% static 'image/Accesorios/llaverosupernintendo2.png' %}"  width="230px" height="260px">
+                <P class="game">LLAVERO SUPER NINTENDO</P>
+                <h3>$6.000</h3>
+              </center>
+              </div>
+            </div>    
+            <hr>
+            <div class="row">
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <img src="{% static 'image/Accesorios/bl.png' %}"  width="200px" height="260px">
+                <P class="game">BILLETERA PS4 </P>
+                <h3>$5.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)"> 
+                <center>
+                <img src="{% static 'image/Accesorios/bg4.jpg' %}"  width="220px" height="260px">
+                <P class="game">BILLETERA ASSASSINS CREED</P>
+                <h3>$15.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <img src="{% static 'image/Accesorios/bg3.jpg' %}"  width="200px" height="260px">
+                <P class="game">BILLETERA PS4</P>
+                <h3>$10.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+               <center>
+                <img src="{% static 'image/Accesorios/bg.png' %}"  width="200px" height="260px">
+                <P class="game">BILLETERA PS1</P>
+                <h3>$10.000</h3>
+              </center>
+              </div>
+            </div>  
+            <hr>     
+            <div class="row">
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <img src="{% static 'image/Accesorios/tg.jpg' %}"  width="260px" height="260px">
+                <P class="game">TAZA GAMER CONTROL PLAY</P>
+                <h3>$10.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)"> 
+                <center>
+                <img src="{% static 'image/Accesorios/tg2.jpg' %}"  width="230px" height="260px">
+                <P class="game">TAZON MUG TAZA GAMER</P>
+                <h3>$10.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <img src="{% static 'image/Accesorios/tg3.jpg' %}"  width="240px" height="260px">
+                <P class="game">TAZA GAME BOY</P>
+                <h3>$5.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+               <center>
+                <img src="{% static 'image/Accesorios/tg4.jpg' %}"  width="220px" height="260px">
+                <P class="game">TAZA GAMER FUEL</P>
+                <h3>$3.000</h3>
+              </center>
+              </div>
+            </div> 
+            <hr>
+            <div class="row">
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <img src="{% static 'image/Accesorios/MG.JPG' %}"  width="230px" height="260px">
+                <P class="game">MOCHILA GAMER RAZER</P>
+                <h3>$50.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)"> 
+                <center>
+                <img src="{% static 'image/Accesorios/mgmsi4.jpg' %}"  width="260px" height="260px">
+                <P class="game">MOCHILA GAMER MSI</P>
+                <h3>$40.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+                <center>
+                <img src="{% static 'image/Accesorios/mg2,jpg.jpg' %}"  width="200px" height="260px">
+                <P class="game">MOCHILA TRAVEL BOY</P>
+                <h3>$20.000</h3>
+              </center>
+              </div>
+              <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 hola" style="background-color:rgb(255, 255, 255)">
+               <center>
+                <img src="{% static 'image/Accesorios/mg3.jpg' %}"  width="200px" height="260px">
+                <P class="game">MOCHILA GAMER AT WORK</P>
+                <h3>$25.000</h3>
+              </center>
+              </div>
+            </div>     
+            <hr>
+        </aside>
+        <footer class="container">
+          <div class="row"> 
+            <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(248, 0, 0)">
+                <img src="{% static 'image/marioasomado.png' %}"  width="265px" height="145px">
+            </div>
+            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(248, 0, 0)"> 
+              <br><br>
+              <h6 class="lol">Suscribete en GoodPlay</h6>
+              <P class="siwa">Para recibir notificaciones de ofertas unicas</P>
+            </div>
+            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(248, 0, 0)">
+              <br><br>
+              <button type="button" data-info="formulario.html" class="mybtn btn btn-warning btn-block siwa">Suscribete Ya</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12"  style="background-color:#fff">
+              <br>
+              <img src="{% static 'image/header22.png' %}"  width="235px" height="145px">  
+              <ol id="pepe">
+                <li>Siguenos En Las Redes Sociales </li>
+                <hr>
+                <img src="{% static 'image/insta.png' %}"  width="63px" height="41px"> 
+                <img src="{% static 'image/face.png' %}"  width="59px" height="39px">&nbsp;&nbsp;
+                <img src="{% static 'image/t.png' %}"  width="42px" height="40px">
+              </ol>
+            </div>
+            <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12"  style="background-color:#fff">
+              <ol id="pepe">
+                <li><h6>Horarios Sucursal</h6></li>
+                <li>Lunes a Sabado</li>
+                <li>10:00 AM - 21:00 PM</li>
+                <li></li>
+                <br>
+                <li><h6>Horarios Web</h6></li>
+                <li>Lunes a Sabado</li>
+                <li>09:00 AM - 22:00 PM</li>
+                <br>
+                <li><h6>Contactenos</h6></li>
+                <li>goodplay@gmail.com</li>
+                <li>4362984567(Mesa Central)</li>
+              </ol>
+            </div>
+            <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12"  style="background-color:#fff">
+              <ol id="pepe">
+                <li><h6>Sucursales</h6></li>
+                <li>- Maipu (Carmen Luisa Correa)</li>
+                <li>- Las Condes (Esteban Dell'orto)</li>
+                <li>- Huechuraba (Calle Nueva)</li>
+                <li>- San Ramon (René Schneider)</li>
+                <li>- San Bernardo (Frida Khalo)</li>
+                <li>- Vitacura (Baltimore)</li>
+                <li>- Ñuñoa (Pdte Madero)</li>
+                <li>- Puente alto(San Carlos)</li>
+                <li>- El Bosque (Los Guindos)</li>
+                <hr>
+              </ol>
+            </div>
+            <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12"  style="background-color:#fff">
+              <img src="{% static 'image/Captura.png' %}"  >
+              <img src="{% static 'image/mario.png' %}"  width="370px" height="220px">
+            </div>
+          </div>
+        </footer>
+        </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        $(".mybtn").click(function(){
+          var newpage = $(this).data("info");
+          window.location.href = newpage;
+        })
+    </script>  
+    </body>
+</html>
+{% endblock %}

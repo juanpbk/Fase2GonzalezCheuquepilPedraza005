@@ -11,17 +11,13 @@
         {% load static %}
         <link rel="icon" type="image/jpg" href="image/spartan.jpg">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link href="{% static 'css/estilos.css' %}" rel="stylesheet">
         
     </head>
     <body>
-      
         <div class="container">
             <header class="container">
               <div class="row">
                 <div  class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color:rgb(255, 255, 255)" >  
-                  {% load static %}
                   <img src="{% static 'image/header22_1.png' %}"  width="235px" height="150px">
                 </div>
               </div>
@@ -29,11 +25,11 @@
             </header>
             <nav class=" sticky-top py-1">
                 <div class="btn-group btn-block">
-                    <button type="button" data-info="formulario.html" class="mybtn btn btn-primary botones">Suscríbase</button>
-                    <button type="button" data-info="consolas.html" class="mybtn btn btn-primary botones">Consolas</button>
-                    <button type="button" data-info="juegos.html" class="mybtn btn btn-primary botones">Juegos</button>
-                    <button type="button" data-info="accesorio.html" class="mybtn btn btn-primary botones">Accesorios</button>
-                    <button type="button" data-info="computacion.html" class="mybtn btn btn-primary botones">Computacion</button>
+                  
+                    <button type="button" data-info="{% url 'consolas.html' %}" class="mybtn btn btn-primary botones">Consolas</button>
+                    <button type="button" data-info="{% url 'juegos.html'%}" class="mybtn btn btn-primary botones">Juegos</button>
+                    <button type="button" data-info="{% url 'accesorio.html'%}" class="mybtn btn btn-primary botones">Accesorios</button>
+                    <button type="button" data-info="{% url 'computacion.html'%}" class="mybtn btn btn-primary botones">Computacion</button>
                 </div>
             </nav>
             
@@ -48,7 +44,7 @@
                       
                       <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <a href="consolas.html">
+                            <a href="{% url 'consolas.html' %}">
                             <img class="d-block w-100" src="{% static 'image/dou.jpg' %}">
                           </a>
                               <div class="carousel-caption">
@@ -56,7 +52,7 @@
                               </div>
                           </div>
                               <div class="carousel-item">
-                                <a href="juegos.html">
+                                <a href="{% static 'juegos.html' %}">
                                   <img class="d-block w-100" src="{% static 'image/oferta.jpg' %}">
                                 </a>
                                   <div class="carousel-caption">
