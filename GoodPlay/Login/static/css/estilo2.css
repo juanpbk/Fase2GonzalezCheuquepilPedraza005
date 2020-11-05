@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: url(../image/pe.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+}
+.form-register{
+    width: 500px;
+    background: #c5dffa;
+    padding: 30px ;
+    margin: 0%;
+    
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 7px 13px 37px #000;
+    color: black;
+}
+
+.form-register h4{
+    font-size: 50px;
+    margin-bottom: 20px;
+    
+    text-align: center;
+}
+
+.controls{
+    width: 80%;
+    padding: 15;
+    border-radius: 5px;
+    margin-bottom: 160px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+
+.botons{
+   width: 100%;
+   background: #1f53c5;
+   border: none;
+   padding: 12px;
+   color: white;
+   margin: 16px 0;
+   font-size: 16px; 
+}

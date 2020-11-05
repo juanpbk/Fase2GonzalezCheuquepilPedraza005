@@ -46,7 +46,22 @@ def computacion(request):
         'computacion.html',
     )
 
-    
+class JuegoCreate(CreateView):
+    model = Juego
+    fields = '__all__'
+
+class JuegoUpdate(UpdateView):
+    model = Juego
+    fields = ['codigo,nombre,compañia,fecha']
+
+class JuegoDelete(DeleteView):
+    model = Juego
+    success_url = reverse_lazy('juegos')
+
+class JuegoDetailView(generic.DetailView):
+    model = Juego
+
+
 
 
 

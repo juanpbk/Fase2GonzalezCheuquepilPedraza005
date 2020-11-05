@@ -23,11 +23,15 @@ class Juego(models.Model):
         max_length= 4,
         choices= CLASIFICACION_JUEGO,
         default='E',
+        blank=True,
     )
 
     def __str__(self):
         """String for representing the Model object."""
         return f'{self.nombre},({self.compañia}),{self.codigo}'
+    
+    def get_absolute_url(self):
+	    return reverse('juegos-detail', args=[str(self.codigo)])
 
 class Compañia(models.Model):
     id_compañia = models.UUIDField(primary_key=True, default=uuid.uuid4, help_text='Indique el Nombre de la Compañia')

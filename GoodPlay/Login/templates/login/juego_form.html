@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content%}
+
+
+
+<form action ="" method="post" class="controls form-register">
+    {%csrf_token%}
+    <h1>Creando Juegos</h1>
+    <table>
+        {{form.as_table}}
+        
+    </table>
+    <input type="submit" value ="Enviar" class="form-group botons">
+</form>
+
+{%endblock%}
