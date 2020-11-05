@@ -33,6 +33,8 @@ class Juego(models.Model):
     def get_absolute_url(self):
 	    return reverse('juegos-detail', args=[str(self.codigo)])
 
+    
+
 class Compañia(models.Model):
     id_compañia = models.UUIDField(primary_key=True, default=uuid.uuid4, help_text='Indique el Nombre de la Compañia')
     nombre_compañia = models.CharField(max_length=60, help_text="Ingrese el Nombre de la Compañia")
